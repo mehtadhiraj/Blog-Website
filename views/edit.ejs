@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+    <div class="container margin-top">
+        <h2 class="text-center">Edit Blog Post</h2>
+        <div class='row'>
+            <div class="col-md-6 col-sm-10 container">
+                <form action="/blogs/<%= blog._id %>?_method=PUT" method="POST" class="form-group-row border-secondary">
+                    <p>Blog ID = <%= blog._id %></p>
+                    <input type="text" name="blog[title]" value="<%= blog.title %>" class="form-control" required>
+                    <p></p>
+                    <input type="text" name="blog[image]" value="<%= blog.image %>" class="form-control" required>
+                    <p></p>
+                    <textarea name="blog[body]" rows="9" class="form-control" required><%= blog.body %></textarea>
+                    <p></p>
+                    <p class="card-text">
+                        <button type="submit" class="btn btn-secondary container">Update</button>
+                    </p>
+                    <p></p>
+                </form>    
+        </div>
+    </div>
+<%- include('partials/footer'); -%>

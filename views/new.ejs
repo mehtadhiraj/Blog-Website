@@ -1,0 +1,21 @@
+<%- include('partials/header') -%>
+    <div class="container margin-top">
+        <h2 class="text-center">New Blog Post</h2>
+        <div class='row'>
+            <div class="col-md-6 col-sm-10 container">
+                <form action="/blogs" method="POST" class="form-group-row border-secondary">
+                    <p></p>
+                    <input type="text" name="blog[title]" placeholder="title" class="form-control">
+                    <p></p>
+                    <input type="text" name="blog[image]" placeholder="image" class="form-control">
+                    <p></p>
+                    <textarea name="blog[body]" rows="9" placeholder="content goes here" class="form-control"></textarea>
+                    <p></p>
+                    <p class="card-text">
+                        <button type="submit" class="btn btn-secondary container">Submit</button>
+                    </p>
+                    <p></p>
+                </form>    
+        </div>
+    </div>
+<%- include('partials/footer'); -%>

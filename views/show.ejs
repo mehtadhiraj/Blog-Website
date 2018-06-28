@@ -1,0 +1,27 @@
+<%- include('partials/header') -%>
+<div class="container margin-top">
+    <h2> <%= blog.title %> </h2>
+    <div class="row">
+        <br>
+        <div class="col-md-12 col-sm-12 ">
+            <p>
+                <%= blog.created.toDateString() %>
+            </p>
+            <img src="<%= blog.image %>" class="img-fluid rounded float-left d-block">
+            <p class="text-justify font">
+                <%= blog.body %>
+            </p>
+            <div class="form-inline">
+                <form action="/<%= blog._id %>/edit" method="GET">
+                    <button class="btn btn-outline-success" type="submit">Edit</button>
+                </form>&nbsp;&nbsp;
+                <form action="/<%= blog._id %>?_method=DELETE" method="POST">
+                    <button class="btn btn-outline-danger" type="submit">Delete</button>
+                </form>
+            </div>    
+        </div>
+    </div>
+</div>
+
+
+<%- include('partials/footer') -%>

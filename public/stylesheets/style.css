@@ -1,0 +1,13 @@
+.margin-top {
+    margin-top: 50px;
+}
+
+img {
+    margin:20px;
+    height: 30%;
+    width:30%;
+}
+
+.font {
+    font-family: 'Roboto', sans-serif;
+}

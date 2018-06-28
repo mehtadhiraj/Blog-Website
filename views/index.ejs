@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+<main>
+    <div class="container margin-top">
+        <h1>This is a index file</h1>
+        <% blogs.forEach(function(blog){ %>
+            <h3>
+                <%= blog.title %>
+            </h3>
+            <img src = "<%= blog.image %>">
+            <p>
+               <i> <%= blog.body.split(/\s+/).slice(0,25).join(" ") %> </i>
+            </p>
+            <a href="/blogs/<%= blog._id %>">Read More</a>
+        <% }) %>
+    </div>
+</main>
+<%- include('partials/footer') -%>
