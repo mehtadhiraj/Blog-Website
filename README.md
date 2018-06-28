@@ -8,4 +8,4 @@ This is general blogging website.
 4. mongodb
 
 #How to start the app
-in command line prompt type --- > node app.js
+In command line prompt type --- > node app.js
