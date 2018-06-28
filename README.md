@@ -7,5 +7,5 @@ This is general blogging website.
 3. expressjs
 4. mongodb
 
-#How to start the app
+# How to start the app
 In command line prompt type --- > node app.js
